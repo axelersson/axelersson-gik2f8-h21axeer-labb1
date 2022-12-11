@@ -17,7 +17,6 @@ searchField.addEventListener('keyup', (e) =>
     })
   )
 );
-
 function renderBookList(bookList) {
   const existingElement = document.querySelector('.book-list');
     const root = document.getElementById('root');
@@ -26,13 +25,10 @@ function renderBookList(bookList) {
   bookList.length > 0 && searchField.value && root.insertAdjacentHTML('beforeend', BookList(bookList));
 
   const lista = document.querySelectorAll(".book-list__item");
-
-
 };
 let bild;
 let hej;
 let hejsan;
-
 $('#root').on('mouseover', 'li', function(e){
     const root = document.getElementById('root');
     
@@ -61,8 +57,6 @@ $('#root').on('mouseover', 'li', function(e){
        }     
         
     }
-    
-
 });
 $('#root').on('mouseout', 'li', function(){
   const visadBild = document.getElementsByClassName('book-list__picture');

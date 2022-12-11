@@ -7,7 +7,6 @@ async function getAll() {
 
   return result;
 }
-
 async function getBook(bookId){
   const result = await fetch(url+`/${bookId}`)
   .then((result) => result.json())
